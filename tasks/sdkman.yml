@@ -1,0 +1,30 @@
+---
+- name: Import SDKMAN role
+  import_role:
+    name: Comcast.sdkman
+  vars:
+    sdkman_user: dparks
+    sdkman_group: staff
+    sdkman_auto_answer: true
+    sdkman_update: true
+    sdkman_install_packages:
+      - { candidate: java, version: 11.0.23-amzn }
+      - { candidate: scala, version: '2.12.17' }
+      - { candidate: sbt, version: 1.5.5 }
+    sdkman_defaults:
+      sbt: '1.5.5'
+      java: 11.0.23-amzn
+      scala: 2.12.17
+    sdkman_update_alternatives:
+      - candidate: java
+        name: java
+        link: /usr/bin/java
+      - candidate: java
+        name: javac
+        link: /usr/bin/javac
+      - candidate: sbt
+        name: sbt
+        link: /usr/bin/sbt
+      - candidate: scala
+        name: scala
+        link: /usr/bin/scala
