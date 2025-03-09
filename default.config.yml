@@ -60,7 +60,6 @@ sudoers_custom_config: |
 #   - .vimrc
 
 homebrew_installed_packages:
-  - smudge/smudge/nightlight
   - baobab
   - mas
   - ansible
@@ -68,7 +67,6 @@ homebrew_installed_packages:
   - bash-completion
   - borgmatic
   - cmake
-  - mqttx-cli
   - espeak
   - esptool
   - ffmpeg
@@ -90,7 +88,6 @@ homebrew_installed_packages:
   - pv
   - wget
   - watch
-  - youtube-dl
   - htop
   - zlib
   - zola

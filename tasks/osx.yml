@@ -1,6 +1,9 @@
 ---
+- name: Install nightlight.
+  command: "brew install smudge/smudge/nightlight"
+  changed_when: false
 - name: Run nightlight schedule.
-  command: "nightlight schedule 7:00pm 6am"
+  command: "nightlight schedule 7pm 6am"
   changed_when: false
 - name: Pyenv install.
   command: "pyenv install 3.13.1"
